@@ -7,6 +7,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>{{ page.title }}</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="{{ BASE_PATH }}/favicon.ico">
 	<meta name="author" content="{{ site.author.name }}">
 	<link href='{{ ASSET_PATH }}/css/style.css' rel="stylesheet" media="all">
 	<link href="http://feeds.feedburner.com/{{ site.author.feedbaname }}" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
@@ -16,21 +18,22 @@
 
 <div id="page" class="hentry">
 	<header class="the-header">
-		<div class="unit-head">
-			<div class="unit-inner unit-head-inner">
-				<nav class="nav-global">
-					<ul>
-						<li class="logo"><a href="/">{{ site.title }}</a></li>
-						<li class="archive"><a href="/archive.html">archive</a></li>
-						<li class="page"><a href="/pages.html">pages</a></li>
-						<li class="category"><a href="/categories.html">categories</a></li>
-						<li class="tag"><a href="/tags.html">tags</a></li>
-						<li class="forkme"><div><iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=plusjade&repo=jekyll-bootstrap&type=fork&count=true"
-									allowtransparency="true" frameborder="0" scrolling="0" width="95px" height="20px"></iframe></div></li>
-					</ul>
-				</nav>
-			</div><!-- unit-inner -->
-		</div><!-- unit-head -->
+		  <div class="unit-inner unit-foot-inner">
+				<div class="misc vcard" align='center'>
+				 <h2> <a href="/">{{ site.title }}</a></h2>
+				</div>
+		  </div>
+		  <aside id="sidebar">	
+			<section class="active">
+			  {% include widgets/recent_posts_list %}
+			</section>
+			<section class="active">
+			  {% include widgets/categories_list %}
+			</section>
+			<section class="active">
+			  {% include widgets/links_list %}
+			</section>
+		  </aside>
 	</header>
 	<div class="body" role="main">
 		<div class="unit-body">

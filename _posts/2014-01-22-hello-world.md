@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Hello World"
-description: ""
-category: 
-tags: []
+title: "作者简介"
+description: "有关博主的介绍"
+category: author
+tags: [简介]
 ---
 {% include JB/setup %}
 

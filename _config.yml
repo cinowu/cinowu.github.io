@@ -82,7 +82,7 @@ JB :
   comments :
     provider : duoshuo
     duoshuo :
-      name : cinowu
+      short_name : cinowu
     disqus :
       short_name : cinowu
     livefyre :
@@ -101,10 +101,10 @@ JB :
   #        
   analytics :
     provider : baidu
-    google : 
-        tracking_id : 'UA-123-12'
     baidu : 
         tracking_id : '5243f16e8323cfb1f459827ff821aff7'
+    google : 
+        tracking_id : 'UA-123-12'
     getclicky :
       site_id : 
     mixpanel :

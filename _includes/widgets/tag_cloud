@@ -1,0 +1,11 @@
+<script type="text/javascript" src="/js/jquery.tagcloud.js"></script>
+<a href="{{ site.JB.tags_path }}" title="查看所有标签"><i class="icon-fixed-width icon-tags"></i> 标签云</a>
+<span title="标签总数">{{ site.tags | size }}</span>
+<div id='tag_cloud'>
+	<div class="tags">
+	{% for tag in site.tags  %}
+	<a href="{{ site.url  }}/tags.html#{{ tag[0]  }}-ref"   title="{{ tag[1].size  }} posts" rel="{{ tag[1].size  }}">
+	    {{ tag[0] }}</a>
+	{% endfor  %}
+	</div>
+</div>

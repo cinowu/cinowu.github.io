@@ -32,6 +32,9 @@
 			<section class="active">
 			  {% include widgets/links_list %}
 			</section>
+			<section class="active" >
+				{% include widgets/tag_cloud %}
+			</section>
 		  </aside>
 	</header>
 	<div class="body" role="main">
@@ -41,12 +44,7 @@
 					{{ content }}
 				</div>
 			</div><!-- unit-inner -->
-
-				<!--baidushare Button BEGIN -->
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"32"},"slide":{"type":"slide","bdImg":"0","bdPos":"right","bdTop":"199.5"},"image":{"viewList":["weixin","tsina","tqq","qzone","kaixin001","renren"],"viewText":"分享到：","viewSize":"32"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","tsina","tqq","qzone","kaixin001","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-				<!-- baidushare Button END -->
-
-
+			{% include widgets/share_buttons %}
 		</div><!-- unit-body -->
 	</div><!-- body -->
 	{% include widgets/back_top_button %}

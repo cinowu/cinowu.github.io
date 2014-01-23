@@ -81,6 +81,8 @@ JB :
   #
   comments :
     provider : duoshuo
+    duoshuo :
+      name : cinowu
     disqus :
       short_name : cinowu
     livefyre :

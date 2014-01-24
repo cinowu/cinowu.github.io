@@ -36,6 +36,9 @@
 			<section class="active">
 			  {% include widgets/clock %}
 			</section>
+			<br/>
+
+			{% include widgets/revolvermaps2 %}
 		  </aside>
 	</header>
 	<div class="body" role="main">
@@ -52,6 +55,12 @@
 	<footer class="the-footer">
 		<div class="unit-foot">
 			<div class="unit-inner unit-foot-inner">
+				 <div align='left'>
+					<form class="navbar-search" action="{{ BASE_PATH }}/search.html">
+					  <input size=20 type="text" class="search-query" placeholder="站内搜索">
+					</form>
+				  </div>
+
 				<div class="misc vcard">
 					<h4>about</h4>
 					<ul>
@@ -64,18 +73,18 @@
 				{% include widgets/imagerotator %}
 
 
-				<!-- 3d tagclouds begin -->
+				
 				  <aside id="sidebar">	
 				
 
-
+				<!-- 3d tagclouds begin -->
 				<section class="active" >
 				{% include widgets/tag_cloud %}
 			     </section>
 				{% include widgets/3d_tag_cloud %}
 				<!-- 3d tagclouds end -->
-
-
+				
+				<!--{% include widgets/revolvermaps %}-->
 
 				<p class="licence">
 					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>

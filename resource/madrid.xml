@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+	<trackList>
+		<track>
+			<title>beautiful</title>
+			<creator>Wujintao</creator>
+			<location>/img/person/1.jpg</location>
+			<info>http://cinowu.github.io</info>
+		</track>
+
+		<track>
+			<title>beautiful</title>
+			<creator>Wujintao</creator>
+			<location>/img/person/2.jpg</location>
+			<info>http://cinowu.github.io</info>
+		</track>
+
+		<track>
+			<title>beautiful</title>
+			<creator>Wujintao</creator>
+			<location>/img/person/3.jpg</location>
+			<info>http://cinowu.github.io</info>
+		</track>
+	</trackList>
+</playlist>

@@ -32,8 +32,9 @@
 			<section class="active">
 			  {% include widgets/links_list %}
 			</section>
-			<section class="active" >
-				{% include widgets/tag_cloud %}
+
+			<section class="active">
+			  {% include widgets/clock %}
 			</section>
 		  </aside>
 	</header>
@@ -60,10 +61,28 @@
 						<li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedname }}">Subscribe to RSS Feed</a></li>
 					</ul>
 				</div><!-- misc -->
+				{% include widgets/imagerotator %}
+
+
+				<!-- 3d tagclouds begin -->
+				  <aside id="sidebar">	
+				
+
+
+				<section class="active" >
+				{% include widgets/tag_cloud %}
+			     </section>
+				{% include widgets/3d_tag_cloud %}
+				<!-- 3d tagclouds end -->
+
+
+
 				<p class="licence">
 					Theme: <a href="http://layouts-the.me">the_minimum</a> based on <a href="http://jekyllbootstrap.com/">Jekyll-bootstrap</a>.<br>
 					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
 				</p>
+				  </aside>	
+
 			</div><!-- unit-foot-inner -->
 		</div><!-- unit-foot -->
 		<div id="back-top">

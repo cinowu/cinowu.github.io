@@ -6,11 +6,11 @@
 	<div id="container">相册</div>
 	<script type="text/javascript" src="/js/swfobject_img.js"></script>
 	<script type="text/javascript">
-		var s1 = new SWFObject("/resource/imagerotator.swf","rotator","700","500","7");
+		var s1 = new SWFObject("/resource/imagerotator.swf","rotator","380","300","7");
 		s1.addParam("allowfullscreen","true");
 		s1.addVariable("file","/resource/madrid.xml");
-		s1.addVariable("width","700");
-		s1.addVariable("height","500");
+		s1.addVariable("width","380");
+		s1.addVariable("height","300");
 		s1.write("container");
 	</script>
 

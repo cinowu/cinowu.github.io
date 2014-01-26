@@ -2,6 +2,7 @@
 layout: page
 title: 
 tagline: 入则孝-出则悌-谨而信-泛爱众-而亲仁
+comments: false
 ---
 {% include JB/setup %}
 

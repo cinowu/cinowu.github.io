@@ -1,11 +1,9 @@
-<script type="text/javascript" src="/js/jquery.tagcloud.js"></script>
 <a href="{{ site.JB.tags_path }}" title="查看所有标签"><i class="icon-fixed-width icon-tags"></i> 标签云</a>
 <span title="标签总数">{{ site.tags | size }}</span>
-<div id='tag_cloud'>
-	<div class="tags">
-	{% for tag in site.tags  %}
-	<a href="{{ site.url  }}/tags.html#{{ tag[0]  }}-ref"   title="{{ tag[1].size  }} posts" rel="{{ tag[1].size  }}">
-	    {{ tag[0] }}</a>
-	{% endfor  %}
-	</div>
+<div id="tag-cloud">
+{% assign tags = site.tags %}{% assign max = tags.size %}{% assign min = max %}{% for tag in site.tags offset:1 %}{% if tag[1].size > max %}{% assign max = tag[1].size %}{% elsif tag[1].size < min %}{% assign min = tag[1].size %}{% endif %}{% endfor %}{% assign diff = max | minus: min %}
+{% for tag in site.tags %}
+  {% assign temp = tag[1].size | minus: min | times: 36 | divided_by: 1 %}{% assign base = temp | divided_by: 4 %}{% assign remain = temp | modulo: 4 %}{% if remain == 0 %}{% assign size = base | plus: 9 %}{% elsif remain == 1 or remain == 2 %}{% assign size = base | plus: 9 | append: '.5' %}{% else %}{% assign size = base | plus: 10 %}{% endif %}{% if remain == 0 or remain == 1 %}{% assign color = 9 | minus: base %}{% else %}{% assign color = 8 | minus: base %}{% endif %}
+  <a href="{{ site.JB.tags_path }}#{{ tag[0] }}-ref" rel="nofollow" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
+{% endfor %}
 </div>

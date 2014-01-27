@@ -13,8 +13,10 @@
   <meta name="author" content="{{ site.author.name }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="{{ BASE_PATH }}/favicon.ico">
+
 
   <!-- Feed -->
   <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ site.JB.rss_path }}">
@@ -65,6 +67,9 @@
           </li>
 		  <li{% if page.url == site.JB.links_path %} class="active"{% endif %}>
             <a href="{{ site.JB.links_path }}" rel="nofollow" title="友情链接">友情链接</a>
+          </li>
+		  <li{% if page.url == site.JB.music_path %} class="active"{% endif %}>
+            <a href="{{ site.JB.music_path }}" rel="nofollow" title="音乐">音乐</a>
           </li>
           <li{% if page.url == site.JB.about_path %} class="active"{% endif %}>
             <a href="{{ site.JB.about_path }}" rel="nofollow" title="关于我">关于我</a>

@@ -8,7 +8,7 @@ title : Sitemap
     <url>
       <loc>{{ site.production_url }}{{ post.url }}</loc>
       <changefreq>daily</changefreq>
-      <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      <lastmod>{{ post.date | date: "%Y-%m-%d"}}</lastmod>
       <priority>1.0</priority>
     </url>
     {% endfor %}

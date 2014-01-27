@@ -61,7 +61,7 @@
             <a href="{{ site.JB.photo_path }}" rel="nofollow" title="相册">相册</a>
           </li>
 		  <li{% if page.url == site.JB.sinaweibo_path %} class="active"{% endif %}>
-            <a href="{{ site.JB.sinaweibo_path }}" rel="nofollow" title="微博墙">微博墙</a>
+            <a href="{{ site.JB.weiboxiu_path }}" rel="nofollow" title="微博墙">微博墙</a>
           </li>
 		  <li{% if page.url == site.JB.links_path %} class="active"{% endif %}>
             <a href="{{ site.JB.links_path }}" rel="nofollow" title="友情链接">友情链接</a>
@@ -86,7 +86,7 @@
           {% include widgets/search_box %}
         </section>
 	  	<section class="active">
-			  {% include widgets/author_info %}
+			  {% include widgets/follow_author %}
 		</section>
         <section{% if page.date or page.title == '存档' or page.title == site.title %} class="active"{% endif %}>
           {% include widgets/recent_posts_list %}

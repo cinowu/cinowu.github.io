@@ -78,6 +78,7 @@ JB :
   about_path : /about.html
   photo_path : /photo.html
   music_path : /music.html
+  video_path : /video.html
   links_path : /links.html
   weiboxiu_path : /weiboxiu.html
   atom_path : /atom.xml

@@ -26,7 +26,8 @@
 
   <!-- Scripts -->
   <script type="text/javascript" src="{{ ASSET_PATH }}/js/jquery-1.10.1.min.js"></script>
-
+  <!--clicki js-->
+  {% include widgets/clicki.cn %}
 </head>
 
 <body>
@@ -57,6 +58,9 @@
 		  <li{% if page.url == site.JB.photo_path %} class="active"{% endif %}>
             <a href="{{ site.JB.photo_path }}" rel="nofollow" title="相册">相册</a>
           </li>
+		  <li{% if page.url == site.JB.sinaweibo_path %} class="active"{% endif %}>
+            <a href="{{ site.JB.sinaweibo_path }}" rel="nofollow" title="微博墙">微博墙</a>
+          </li>
 		  <li{% if page.url == site.JB.links_path %} class="active"{% endif %}>
             <a href="{{ site.JB.links_path }}" rel="nofollow" title="友情链接">友情链接</a>
           </li>
@@ -70,8 +74,10 @@
       </nav>
     </header>
 
+	<!--clicki浮动块-->
+	<div id="clicki_widget_6867" ></div>
+	
     <section id="main">
-
       <!-- Sidebar -->
       <aside id="sidebar">
 	    <section id="search-box">

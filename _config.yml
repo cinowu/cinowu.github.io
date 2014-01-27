@@ -78,6 +78,7 @@ JB :
   about_path : /about.html
   photo_path : /photo.html
   links_path : /links.html
+  sinaweibo_path : /sinaweibo.html
   atom_path : /atom.xml
   rss_path : /rss.xml
 

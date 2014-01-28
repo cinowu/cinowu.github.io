@@ -5,8 +5,7 @@
 <title>放大镜</title>
 <script type="text/javascript" src="/js/jquery.imagezoom.min.js"></script>
 <style type="text/css">
-html {overflow-y:scroll;}
-body {margin:0; font:12px "\5B8B\4F53",san-serif;background:#ffffff;}
+
 div,ul,li{padding:0; margin:0;}
 li{list-style-type:none;}
 img{vertical-align:top;border:0;}
@@ -70,7 +69,7 @@ img{vertical-align:top;border:0;}
 
 .tb-s40, .tb-s40 a {
     height:40px;
-	width:40px;
+	width:50px;
 }
 
 
@@ -133,7 +132,7 @@ div.zoomMask {
 
 
 <div class="tb-booth tb-pic tb-s310">
-	<a href="/img/person/1.jpg" target="_blank"><img src="{{ IMAGE_PATH }}/person/1-mid.jpg" alt="多好" rel="{{ IMAGE_PATH }}/person/1.jpg" class="jqzoom"></a>
+	<a href="{{ IMAGE_PATH }}/img/person/1.jpg" target="_blank"><img src="{{ IMAGE_PATH }}/person/1-mid.jpg" alt="多好" rel="{{ IMAGE_PATH }}/person/1.jpg" class="jqzoom"></a>
 </div>
 <ul class="tb-thumb" id="thumblist">
 <li>
@@ -158,20 +157,14 @@ div.zoomMask {
 
 <script type="text/javascript">
 $(document).ready(function(){
-
   $(".jqzoom").imagezoom();
-
   $("#thumblist li a").click(function () {
       $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
 	  $(".jqzoom").attr('src',$(this).find("img").attr("mid"));
 	  $(".jqzoom").attr('rel',$(this).find("img").attr("big"));
   });
 
-
-
-
 });
-
 </script>
  </body>
  </html>

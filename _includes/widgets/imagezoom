@@ -115,7 +115,7 @@ div.zoomDiv {
 
 div.zoomMask {
     position:absolute;
-    background:url("./images/mask.png") repeat scroll 0 0 transparent;
+    background:url("{{ IMAGE_PATH }}/mask.png") repeat scroll 0 0 transparent;
 	cursor:move;
 	z-index:1;
 }
@@ -133,22 +133,22 @@ div.zoomMask {
 
 
 <div class="tb-booth tb-pic tb-s310">
-	<a href="/img/person/1.jpg" target="_blank"><img src="/img/person/1-mid.jpg" alt="多好" rel="/img/person/1.jpg" class="jqzoom"></a>
+	<a href="/img/person/1.jpg" target="_blank"><img src="{{ IMAGE_PATH }}/person/1-mid.jpg" alt="多好" rel="{{ IMAGE_PATH }}/person/1.jpg" class="jqzoom"></a>
 </div>
 <ul class="tb-thumb" id="thumblist">
 <li>
 	<div class="tb-pic tb-s40">
-		<a href="#"><img src="/img/person/3-small.jpg" mid="/img/person/3-mid.jpg" big="/img/person/3.jpg"></a>
+		<a href="#"><img src="{{ IMAGE_PATH }}/person/3-small.jpg" mid="{{ IMAGE_PATH }}/person/3-mid.jpg" big="{{ IMAGE_PATH }}/person/3.jpg"></a>
 	</div>
 </li>
 <li>
 	<div class="tb-pic tb-s40">
-		<a href="#"><img  src="/img/person/2-small.jpg" mid="/img/person/2-mid.jpg" big="/img/person/2.jpg"></a>
+		<a href="#"><img  src="{{ IMAGE_PATH }}/person/2-small.jpg" mid="{{ IMAGE_PATH }}/person/2-mid.jpg" big="{{ IMAGE_PATH }}/person/2.jpg"></a>
 	</div>
 </li>
 <li class="tb-selected">
 	<div class="tb-pic tb-s40">
-		<a href="#"><img src="/img/person/1-small.jpg" mid="/img/person/1-mid.jpg" big="/img/person/1.jpg"></a>
+		<a href="#"><img src="{{ IMAGE_PATH }}/person/1-small.jpg" mid="{{ IMAGE_PATH }}/person/1-mid.jpg" big="{{ IMAGE_PATH }}/person/1.jpg"></a>
 	</div>
 </li>
 </ul>

@@ -29,6 +29,10 @@ author :
 production_url : http://cinowu.github.io
 #production_url : http://localhost:4000
 
+safe: false
+cdn_url : http://cinowu.qiniudn.com
+
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
@@ -66,6 +70,7 @@ JB :
   #   /assets
   #
   ASSET_PATH : false
+  IMAGE_PATH : false
 
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change them here if needed.

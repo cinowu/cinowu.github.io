@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "programmer husband"
+title: "找程序员做老公的十大好处"
 description: ""
-category: 
+category: life
 tags: []
 ---
 {% include JB/setup %}

@@ -97,7 +97,7 @@ JB :
   comments :
     provider : duoshuo
     duoshuo :
-      short_name : cinowu
+      short_name : cino
     disqus :
       short_name : cinowu
     livefyre :
@@ -117,7 +117,7 @@ JB :
   analytics :
     provider : baidu
     baidu : 
-        tracking_id : '5243f16e8323cfb1f459827ff821aff7'
+        tracking_id : '21805b2218fc458ce3337418f5833404'
     google : 
         tracking_id : 'UA-123-12'
     getclicky :

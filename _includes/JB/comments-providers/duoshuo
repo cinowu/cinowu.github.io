@@ -28,7 +28,7 @@
 <!-- Duoshuo Comment BEGIN -->
 	<div class="ds-thread"></div>
 <script type="text/javascript">
-var duoshuoQuery = {short_name:"{{ site.JB.comments.duoshuo.short_name }}"};
+var duoshuoQuery = {short_name:"cino"};
 	(function() {
 		var ds = document.createElement('script');
 		ds.type = 'text/javascript';ds.async = true;

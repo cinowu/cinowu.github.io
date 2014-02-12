@@ -71,7 +71,6 @@ JB :
   #   http://s3.amazonaws.com/yoursite/themes/watermelon
   #   /assets
   #
-  CNAME : http://codewu.com/
   ASSET_PATH : false
   IMAGE_PATH : false
 

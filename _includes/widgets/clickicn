@@ -3,11 +3,10 @@
     var c = document.createElement('script'); 
     c.type = 'text/javascript';
     c.async = true;
-    c.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.clicki.cn/boot/50479';
+    c.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.clicki.cn/boot/50550';
     var h = document.getElementsByTagName('script')[0];
     h.parentNode.insertBefore(c, h);
 })();
 </script>
 
-<!--clicki浮动块-->
-<div id="clicki_widget_6867" title=""></div>
+<div id="clicki_widget_6999" ></div>

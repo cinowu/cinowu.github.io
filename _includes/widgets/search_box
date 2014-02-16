@@ -52,7 +52,7 @@ $(document).ready(function() {
   function findEntries(q) {
     var matches = [];
     var rq = new RegExp(q, 'im');
-    var rl = /^http:\/\/cinowu\.github\.io\/(.+)$/;
+    var rl = /^http:\/\/codewu\.com\/(.+)$/;
     for (var i = 0; i < entries.length; i++) {
       var entry = entries[i];
       var title = $(entry.getElementsByTagName('title')[0]).text();

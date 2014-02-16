@@ -66,13 +66,19 @@ $(document).ready(function() {
       }
     }
     var html = '';
-    for (var i = 0; i < matches.length; i++) {
-      var match = matches[i]; 
-      html += '<article class="nested">';
-      html += '<header><h2><a href="' + match.link + '">' + htmlEscape(match.title) + '</a></h2></header>';
-      html += '<section><p>' + htmlEscape(match.content) + '</p></section>';
-      html += '<footer><p>更新日期：' + match.date + '</p></footer>';
-      html += '</article>';
+    if (matches.length!=0) {
+      for (var i = 0; i < matches.length; i++) {
+        var match = matches[i]; 
+        html += '<article class="nested">';
+        html += '<header><h2><a href="' + match.link + '">' + htmlEscape(match.title) + '</a></h2></header>';
+        html += '<section><p>' + htmlEscape(match.content) + '</p></section>';
+        html += '<footer><p>更新日期：' + match.date + '</p></footer>';
+        html += '</article>';
+      }
+    } else {
+	html += '<article class="nested">';
+        html += '<h1>你输入的关键词没有搜索结果，请更换关键词！ O(∩_∩)O~</h1>';
+        html += '</article>';
     }
     $('#main-content').html(html);
     $('#loader').hide();

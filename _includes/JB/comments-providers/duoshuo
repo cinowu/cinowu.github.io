@@ -26,7 +26,7 @@
 </style>
 
 <!-- Duoshuo Comment BEGIN -->
-	<div class="ds-thread"></div>
+	<div class="ds-thread" data-title="{{ page.title }}"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"cino"};
 	(function() {

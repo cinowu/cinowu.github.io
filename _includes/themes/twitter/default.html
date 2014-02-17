@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <!--[if IE 8 ]><meta http-equiv="X-UA-Compatible" content="IE=7"><![endif]-->
 
-  <title>首页 - {{ site.title }}</title>
+  <title>{% if page.title %} {{ page.title }} {% else %}{{ site.title }}{% endif %}</title>
   {% if page.keywords %}<meta name="keywords" content="{{ page.keywords | join: "," }}">{% endif %}
   {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
   <meta name="author" content="{{ site.author.name }}">
@@ -101,6 +101,9 @@
         </section>
 		<section{% if page.title == '标签'%} class="active"{% endif %}>
           {% include widgets/tag_cloud %}
+        </section>
+		<section>
+          {% include widgets/hot_post_list %}
         </section>
 		<section>
           {% include widgets/recent_comments %}

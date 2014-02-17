@@ -1,5 +1,5 @@
 <a><i class="icon-fixed-width icon-tags"></i>热评文章</a>
-<ul  class="ds-top-threads" data-range="weekly" data-num-items="5"></ul>
+<ul  class="ds-top-threads" data-range="daily" data-num-items="5"></ul>
 <!--多说js加载开始，一个页面只需要加载一次 -->
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"cino"};

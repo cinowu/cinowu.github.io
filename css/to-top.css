@@ -7,7 +7,7 @@
   width: 54px;
   height: 54px;
   display: block;
-  background: #ddd url(img/bg_up_arrow.png) no-repeat center center;
+  background: #ddd url(../img/bg_up_arrow.png) no-repeat center center;
   background-color: #aaa;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
